@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import Herosection from './components/Herosection';
+import About from './components/skills';
+import Project from './components/Project';
+import Footer from './components/Footer';
+import Tripadvisor from './components/tripadvisor';
+import Todo from './components/todooverview';
+import Mailoverview from './components/bulkmailoverview';
+import Experience from './components/experience';
+import Skills from './components/skills';
+
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+
+        <Routes>
+          <Route path='/' element={<React.Fragment><Header /><Herosection /><About /><Project /><Experience /><Footer /></React.Fragment>}></Route>
+          <Route path='/tripadvisor' element={<Tripadvisor />}></Route>
+          <Route path='/bulkmailoverview' element={<Mailoverview />}></Route>
+          <Route path='/todooverview' element={<Todo />}></Route>
+          <Route path="/skills" element={<Skills />} />
+
+
+        </Routes>
+      </Router>
     </div>
   );
 }

@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+
+}
+header{
+  scroll-behavior: smooth;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rubik-md {
+  font-optical-sizing: auto;
+  font-size: 20px;
+  line-height: 1.75rem;
+  color: #8C9AAD;
+  font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.bg-skill {
+  background: linear-gradient(#76A2EE, #4883E9);
+  /* background-color: red; */
+}
+
+.portfolio-highlighter {
+  color: #0D43A8;
+}
+.bg-portfolio-secondary{
+ background-color: rgb(72, 131, 233);
+}
+
+header ul li {
+  @apply px-3
+}
+
+.bg-primary {
+  background: #4883E9;
+}
+
+.bg-secondary {
+  background: #F1F1FA;
+}
+
+.mobile-nav {
+  @apply fixed top-16 left-0 w-full h-1/4;
+  background: #514cc8;
+
+}
+
+.icons a:hover {
+  @apply text-violet-500;
+}
+
+
+.mobile-nav li {
+  @apply w-full h-full text-center border-b-2
+}
+
+.mobile-nav li:hover {
+  @apply text-lg cursor-pointer;
+}
+
+.styles_milestone__Qzjm7 h1 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: #0D43A0;
+}
+
+.text-portfolio-text-light {
+  color: #8896aa !important;
+}
+
+.styles_milestone__Qzjm7 {
+  margin-bottom: 1rem !important;
+  width: 100%;
+  border-radius: 0.75rem;
+  background-color: var(--fold-bg);
+  padding: 1.5rem;
+  font-family: Rubik, sans-serif;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: #606060;
+  --tw-drop-shadow: drop-shadow(0 4px 3px rgba(0, 0, 0, .07)) drop-shadow(0 2px 2px rgba(0, 0, 0, .06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.html-parser ul {
+  margin-left: 1.5rem;
+  list-style: disc;
+}
+
+.styles_milestone__Qzjm7 h2 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+  line-height: 1.5rem;
+  color: #0D43A0;
+}
+
+@media screen and (max-width:650px) {
+  .styles_milestone__Qzjm7 {
+    padding: 5px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .styles_milestone__Qzjm7 h1 {
+    font-size: 19px;
+    line-height: 1.5rem;
   }
 }
