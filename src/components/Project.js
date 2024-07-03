@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import p1 from '../assets/p1.png'
+import p2 from '../assets/p2.png'
 
 const Project = () => {
   const navigate = useNavigate();
@@ -82,7 +84,7 @@ const Project = () => {
             </div>
             <div className="md:h-[350px] relative md:w-5/12 rounded-[20px]">
               <div className="image-container undefined">
-                <img alt="pic" src="https://crio-directus-assets.s3.ap-south-1.amazonaws.com/f7dfc8ad-a174-4d2b-8af7-c1ff1e1e8719.png" className="md:h-[350px] h-[200px] object-contain real-image relative duration-700 ease-in-out grayscale-0 blur-0 scale-100" />
+                <img alt="pic" src={p1} className="md:h-[350px] h-[200px] object-contain real-image relative duration-700 ease-in-out grayscale-0 blur-0 scale-100" />
               </div>
             </div>
           </div>
@@ -138,7 +140,7 @@ const Project = () => {
             </div>
             <div className="md:h-[350px] relative md:w-5/12 rounded-[20px]">
               <div className="image-container undefined">
-                <img alt="pic" src="https://crio-directus-assets.s3.ap-south-1.amazonaws.com/f7dfc8ad-a174-4d2b-8af7-c1ff1e1e8719.png" className="md:h-[350px] h-[200px] object-contain real-image relative duration-700 ease-in-out grayscale-0 blur-0 scale-100" />
+                <img alt="pic" src={p2} className="md:h-[350px] h-[200px] object-contain real-image relative duration-700 ease-in-out grayscale-0 blur-0 scale-100" />
               </div>
             </div>
           </div>
@@ -162,7 +164,6 @@ const Project = () => {
                                        <li>Developed 1 distinct web pages based on Wireframe layouts using HTML and CSS</li>
                                        <li>Implemented Media Queery extensively for ensuring responsive design</li>
                                        <li>&nbsp;Deployed the website to Github/Netlify</li>
-                                       {/* <li>Deployed the website to hosting platforms like AWS or Google Cloud</li> */}
                                     </ul>
                                  </span>
                            </div>
@@ -194,7 +195,7 @@ const Project = () => {
             </div>
             <div class="md:h-[350px] relative md:w-5/12 rounded-[20px]">
                <div class="image-container undefined">
-               <img alt="image" src="https://crio-directus-assets.s3.ap-south-1.amazonaws.com/0ba0c306-851a-451e-89bb-623289fca9a3.png" class="md:h-[350px] h-[200px] object-contain real-image relative
+               <img alt="image" src={p1} class="md:h-[350px] h-[200px] object-contain real-image relative
             duration-700 ease-in-out grayscale-0 blur-0 scale-100" />
                   </div>
             </div>
