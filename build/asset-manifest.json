@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.a9aa372c.css",
+    "main.js": "/portfolio/static/js/main.fbed66af.js",
+    "static/media/trip-landingpage.png": "/portfolio/static/media/trip-landingpage.f9d3f8e05412087ab4d6.png",
+    "static/media/waytomdy1.png": "/portfolio/static/media/waytomdy1.9a2aa594c33a82391b44.png",
+    "static/media/mailrecived.png": "/portfolio/static/media/mailrecived.90e6023d36ca486c207b.png",
+    "static/media/tip-tabview.png": "/portfolio/static/media/tip-tabview.a73e4e7e7b24308c007e.png",
+    "static/media/waytomdu.png": "/portfolio/static/media/waytomdu.85a24e815867d58deaac.png",
+    "static/media/skill4.png": "/portfolio/static/media/skill4.42c607ebbf5cd0fa7580.png",
+    "static/media/actodo1.png": "/portfolio/static/media/actodo1.907b4407cdc545c3661b.png",
+    "static/media/actodo4.png": "/portfolio/static/media/actodo4.4c9fbbe37ec59e5ce9fe.png",
+    "static/media/actodo3.png": "/portfolio/static/media/actodo3.9ac2c0bab3218b2104ba.png",
+    "static/media/trip1 (2).jpeg": "/portfolio/static/media/trip1 (2).80f80e930961d844a027.jpeg",
+    "static/media/skill8.png": "/portfolio/static/media/skill8.45683e846af8438c2254.png",
+    "static/media/actodo6.png": "/portfolio/static/media/actodo6.fe2562f86e2925aa6531.png",
+    "static/media/skill7.png": "/portfolio/static/media/skill7.55c99564351cccffca84.png",
+    "static/media/actodo5.png": "/portfolio/static/media/actodo5.0d1a3026591f0c37aefd.png",
+    "static/media/aboutimage.jpg": "/portfolio/static/media/aboutimage.6db4fb8e648214138b17.jpg",
+    "static/media/actodo2.png": "/portfolio/static/media/actodo2.3f81b50b0ebef53a56a0.png",
+    "static/media/mailsend.png": "/portfolio/static/media/mailsend.1145775e0a6ebcdd026d.png",
+    "static/media/bulkmail.png": "/portfolio/static/media/bulkmail.e2f5e9afa078972f4eff.png",
+    "static/media/bulkmail (2).png": "/portfolio/static/media/bulkmail (2).20b1046457566380c4a8.png",
+    "static/media/skill10.png": "/portfolio/static/media/skill10.0dc9429dc2aaaa7d4485.png",
+    "static/media/mailmblview.png": "/portfolio/static/media/mailmblview.c42366e7be653f612b4c.png",
+    "static/media/skill11.png": "/portfolio/static/media/skill11.d9fcf54cca347876e9d6.png",
+    "static/media/mongodb.svg": "/portfolio/static/media/mongodb.bfa6cdd80f4a99232cadb39ebbb976d2.svg",
+    "index.html": "/portfolio/index.html",
+    "main.a9aa372c.css.map": "/portfolio/static/css/main.a9aa372c.css.map",
+    "main.fbed66af.js.map": "/portfolio/static/js/main.fbed66af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9aa372c.css",
+    "static/js/main.fbed66af.js"
+  ]
+}

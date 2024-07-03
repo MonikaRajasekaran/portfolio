@@ -18,14 +18,18 @@ export default function Header() {
                 </ul>
             </nav>
             {toggleMenu && (
-                <nav className="block md:hidden">
-                    <ul className="flex flex-col mobile-nav cursor-pointer">
-                    <li><HashLink to="/#skills-section">Skills Acquired</HashLink></li>
-                <li><HashLink to="/#project-section">My Projects</HashLink></li>
+  <nav className="block md:hidden h-auto w-auto">
+    <ul className="flex flex-col mobile-nav cursor-pointer ">
+      <li className="text-center">
+        <HashLink to="/#skills-section">Skills Acquired</HashLink>
+      </li>
+      <li>
+        <HashLink to="/#project-section">My Projects</HashLink>
+      </li>
+    </ul>
+  </nav>
+)}
 
-                    </ul>
-                </nav>
-            )}
             <button onClick={() => setToggleMenu(!toggleMenu)} className='block md:hidden'>
                 <Bars3Icon className='text-white h-7' />
             </button>

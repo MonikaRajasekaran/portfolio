@@ -1,6 +1,6 @@
 export default function About() {
     return <section class="w-full flex justify-center pb-6  my-6">
-    <div class="w-full max-w-[1050px] flex flex-col gap-0 justify-center md:py-8">
+    <div class="w-full max-w-[1050px] flex flex-col gap-0 justify-center md:py-8  bg-white bg-cover p-6 shadow-lg">
        <div id="skills" class="portfolio-highlighter flex gap-6 items-center my-8 justify-center md:justify-start w-full max-w-[1050px] undefined">
           <h2 class="min-w-fit text-2xl md:text-4xl font-manrope font-extrabold flex gap-2 items-center">Experience</h2>
        </div>
@@ -19,8 +19,6 @@ export default function About() {
                                     <li>Design and implement front-end interfaces using HTML, CSS, JavaScript, and modern JavaScript frameworks such as React.js.</li>
                                     <li>Optimize application performance and ensure responsiveness across various devices and browsers.</li>
                                     <li>Write clean, well-documented, and testable code following best practices and coding standards.</li>
-                                    <li>Conduct code reviews to ensure code quality, performance, and adherence to coding standards.</li>
-                                    <li>Troubleshoot, debug, and resolve technical issues as they arise.</li>
                                     <li>Stay up-to-date with the latest trends and technologies in web development and propose innovative solutions to enhance our products.</li>
                                  </ul>
                      </div>
@@ -37,12 +35,8 @@ export default function About() {
                         <li>Develop and maintain user-friendly and visually appealing web interfaces using HTML, CSS, and JavaScript.</li>
                         <li>Implement responsive designs to ensure optimal user experience across various devices and screen sizes.</li>
                         <li>Collaborate with designers and back-end developers to translate design mockups and wireframes into functional front-end code.</li>
-                        <li>Integrate front-end components with back-end services and APIs to deliver seamless user experiences.</li>
                         <li>Optimize website performance by optimizing code, images, and assets for fast loading times.</li>
                         <li>Write clean, modular, and reusable code following industry best practices and coding standards.</li>
-                        <li>Conduct code reviews and provide constructive feedback to maintain code quality and consistency.</li>
-                        <li>Identify and resolve front-end issues, bugs, and performance bottlenecks in a timely manner.</li>
-                        <li>Stay updated with the latest trends and advancements in front-end development and propose innovative solutions to enhance our products.</li>
                     </ul>
                 </div>
 

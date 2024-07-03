@@ -77,6 +77,7 @@ const Project = () => {
               </div>
               <div className="flex flex-col items-center md:flex-row gap-6 md:gap-4 mt-4">
                 <button onClick={handleClick1} type="button" className="chakra-button transition duration-300 shadow-md border-2 rounded-full self-center font-bold p-4 md:p-8 py-5 md:py-6 min-w-[180px] text-portfolio-highlighter bg-portfolio-background border-portfolio-highlighter border-2 mb-2 md:mb-0">View Project Details </button>
+                <button class="chakra-button transition duration-300 shadow-md border-2 rounded-full self-center font-bold p-4 md:p-8 py-5 md:py-6 min-w-[180px] text-portfolio-highlighter bg-portfolio-background border-portfolio-highlighter border-2 mb-2 md:mb-0 css-jxyevw"><a href="https://actodo-three.vercel.app/" target='new'>View Project</a></button>
               </div>
             </div>
             <div className="md:h-[350px] relative md:w-5/12 rounded-[20px]">
@@ -132,6 +133,7 @@ const Project = () => {
               </div>
               <div className="flex flex-col items-center md:flex-row gap-6 md:gap-4 mt-4">
                 <button onClick={handleClick2} type="button" className="chakra-button transition duration-300 shadow-md border-2 rounded-full self-center font-bold p-4 md:p-8 py-5 md:py-6 min-w-[180px] text-portfolio-highlighter bg-portfolio-background border-portfolio-highlighter border-2 mb-2 md:mb-0">View Project Details </button>
+                <button class="chakra-button transition duration-300 shadow-md border-2 rounded-full self-center font-bold p-4 md:p-8 py-5 md:py-6 min-w-[180px] text-portfolio-highlighter bg-portfolio-background border-portfolio-highlighter border-2 mb-2 md:mb-0 css-jxyevw"><a href="https://actodo-three.vercel.app/" target='new'>View Project</a></button>
               </div>
             </div>
             <div className="md:h-[350px] relative md:w-5/12 rounded-[20px]">
