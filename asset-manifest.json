@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.96206ea8.css",
-    "main.js": "/portfolio/static/js/main.689b7440.js",
+    "main.js": "/portfolio/static/js/main.c64f5af3.js",
     "static/media/trip-landingpage.png": "/portfolio/static/media/trip-landingpage.f9d3f8e05412087ab4d6.png",
     "static/media/waytomdy1.png": "/portfolio/static/media/waytomdy1.9a2aa594c33a82391b44.png",
     "static/media/udemy.png": "/portfolio/static/media/udemy.b14c2998d36dc1e7f34b.png",
@@ -33,10 +33,10 @@
     "static/media/mongodb.svg": "/portfolio/static/media/mongodb.d18b3c0417bd19d758ccab324a5a44a5.svg",
     "index.html": "/portfolio/index.html",
     "main.96206ea8.css.map": "/portfolio/static/css/main.96206ea8.css.map",
-    "main.689b7440.js.map": "/portfolio/static/js/main.689b7440.js.map"
+    "main.c64f5af3.js.map": "/portfolio/static/js/main.c64f5af3.js.map"
   },
   "entrypoints": [
     "static/css/main.96206ea8.css",
-    "static/js/main.689b7440.js"
+    "static/js/main.c64f5af3.js"
   ]
 }
