@@ -6,6 +6,26 @@ export default function About() {
        </div>
        <div>
        <div>
+          <div>
+          <p class="text-portfolio-text-medium text-sm md:text-xl font-semibold mb-1 mt-2 md:mt-0 font-manrope">Higglerslab Solutions Private Limited (Jul 2024- Present)</p>
+          <p class="text-portfolio-text-medium text-sm md:text-xl font-semibold mb-1 mt-2 md:mt-0">Full Stack Developer
+             </p>   
+            
+             <div class="html-parser">
+                     <div>
+                                 <p> Responsibilities:<br /></p>
+                                 <ul>
+                                    <li>Develop and maintain end-to-end web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).</li>
+                                    <li>Build modern, responsive, and user-friendly interfaces using React.js, Tailwind CSS, JavaScript, and reusable UI components.</li>
+                                    <li>Design and implement secure backend services, REST APIs, and authentication flows using Node.js, Express.js, JWT, or AWS Cognito.</li>
+                                    <li>Work with MongoDB to design schemas, optimize queries, and ensure high data performance and scalability.</li>
+                                    <li>Integrate third-party services and APIs to enhance functionality and provide additional features.</li>
+                                    <li>Write clean, modular, and maintainable code, following industry standards and best practices.</li>
+                                    <li>Optimize application performance and ensure responsiveness across various devices and browsers.</li>
+                                 </ul>
+                     </div>
+                  </div>
+          </div>
        <div>
           <p class="text-portfolio-text-medium text-sm md:text-xl font-semibold mb-1 mt-2 md:mt-0 font-manrope">Exposure India (Dec 2022- June 2023)</p>
           <p class="text-portfolio-text-medium text-sm md:text-xl font-semibold mb-1 mt-2 md:mt-0">Full Stack Developer
