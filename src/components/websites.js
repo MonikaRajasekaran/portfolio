@@ -4,6 +4,7 @@ import Weather from '../assets/weather.png';
 import Nostra from '../assets/Nostra.png';
 import Greenden from '../assets/greenden.png';
 import Triadvisor from '../assets/trip-landingpage.png';
+import AirbnbClone from '../assets/img1.jpeg';
 
 
 
@@ -23,17 +24,18 @@ export default function Websites() {
           <div class="portfolio-highlighter w-full md:w-full h-[2px] hidden md:block"></div>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-12 justify-between transition duration-300 mx-4 mb-8 ">
+         <div class="flex flex-col items-center ">
+            <img class="h-64 max-w-xs rounded-lg bg-white bg-cover p-6 shadow-lg" src={AirbnbClone} alt="Air Bnb Clone" />
+            <a href="https://book-nest-azure-three.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <p class="items-center font-bold p-2 portfolio-highlighter">Visit Website</p>
+            </a>            </div>
           <div class="flex flex-col items-center ">
             <img class="h-64 max-w-xs rounded-lg bg-white bg-cover p-6 shadow-lg" src={Udemy} alt="udemy clone" />
             <a href="https://monikarajasekaran.github.io/Udemy-clone/" target="_blank" rel="noopener noreferrer">
               <p class="items-center font-bold p-2 portfolio-highlighter">Visit Website</p>
             </a>
           </div>
-          {/* <div class="flex flex-col items-center ">
-            <img class="h-64 max-w-xs rounded-lg bg-white bg-cover p-6 shadow-lg" src={Weather} alt="Weather App" />
-            <a href="https://actodo-three.vercel.app/" target="_blank" rel="noopener noreferrer">
-              <p class="items-center font-bold p-2 portfolio-highlighter">Visit Website</p>
-            </a>            </div> */}
+         
           <div class="flex flex-col items-center ">
             <img class="h-64 max-w-xs rounded-lg bg-white bg-cover p-6 shadow-lg" src={Nostra} alt="Nostra Ecommerce" />
             <a href="https://monikarajasekaran.github.io/Nosta-Ecommerce/" target="_blank" rel="noopener noreferrer">

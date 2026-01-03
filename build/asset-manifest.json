@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.96206ea8.css",
-    "main.js": "/portfolio/static/js/main.c64f5af3.js",
+    "main.css": "/portfolio/static/css/main.bcc5267f.css",
+    "main.js": "/portfolio/static/js/main.4d3ddeea.js",
     "static/media/trip-landingpage.png": "/portfolio/static/media/trip-landingpage.f9d3f8e05412087ab4d6.png",
     "static/media/waytomdy1.png": "/portfolio/static/media/waytomdy1.9a2aa594c33a82391b44.png",
     "static/media/udemy.png": "/portfolio/static/media/udemy.b14c2998d36dc1e7f34b.png",
@@ -20,6 +20,7 @@
     "static/media/actodo6.png": "/portfolio/static/media/actodo6.fe2562f86e2925aa6531.png",
     "static/media/p2.png": "/portfolio/static/media/p2.76cb50bf8aca9364befd.png",
     "static/media/skill7.png": "/portfolio/static/media/skill7.55c99564351cccffca84.png",
+    "static/media/img1.jpeg": "/portfolio/static/media/img1.e5dac1dba55cb7db82f5.jpeg",
     "static/media/actodo5.png": "/portfolio/static/media/actodo5.0d1a3026591f0c37aefd.png",
     "static/media/aboutimage.jpg": "/portfolio/static/media/aboutimage.6db4fb8e648214138b17.jpg",
     "static/media/actodo2.png": "/portfolio/static/media/actodo2.3f81b50b0ebef53a56a0.png",
@@ -32,11 +33,11 @@
     "static/media/skill11.png": "/portfolio/static/media/skill11.d9fcf54cca347876e9d6.png",
     "static/media/mongodb.svg": "/portfolio/static/media/mongodb.d18b3c0417bd19d758ccab324a5a44a5.svg",
     "index.html": "/portfolio/index.html",
-    "main.96206ea8.css.map": "/portfolio/static/css/main.96206ea8.css.map",
-    "main.c64f5af3.js.map": "/portfolio/static/js/main.c64f5af3.js.map"
+    "main.bcc5267f.css.map": "/portfolio/static/css/main.bcc5267f.css.map",
+    "main.4d3ddeea.js.map": "/portfolio/static/js/main.4d3ddeea.js.map"
   },
   "entrypoints": [
-    "static/css/main.96206ea8.css",
-    "static/js/main.c64f5af3.js"
+    "static/css/main.bcc5267f.css",
+    "static/js/main.4d3ddeea.js"
   ]
 }

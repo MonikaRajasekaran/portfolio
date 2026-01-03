@@ -11,6 +11,8 @@ import Mailoverview from './components/bulkmailoverview';
 import Experience from './components/experience';
 import Skills from './components/skills';
 
+import AirbnbOverview from './components/airbnboverview';
+
 import './App.css';
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
           <Route path="/bulkmailoverview" element={<Mailoverview />} />
           <Route path="/todooverview" element={<Todo />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/airbnboverview" element={<AirbnbOverview />} />
         </Routes>
       </Router>
     </div>

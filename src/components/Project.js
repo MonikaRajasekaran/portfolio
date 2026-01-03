@@ -8,8 +8,14 @@ const Project = () => {
   const [showMore, setShowMore] = useState(false);
 
   const toggleShowMore = () => {
-   setShowMore(!showMore);
- };
+    setShowMore(!showMore);
+  };
+
+  const [showMoreAirbnb, setShowMoreAirbnb] = useState(false);
+
+  const toggleShowMoreAirbnb = () => {
+    setShowMoreAirbnb(!showMoreAirbnb);
+  };
 
   const handleClick = () => {
     navigate('/tripadvisor');
@@ -23,7 +29,11 @@ const Project = () => {
     navigate('/todooverview');
   };
 
- 
+  const handleClick3 = () => {
+    navigate('/airbnboverview');
+  };
+
+
 
   return (
     <section className="w-full flex justify-center pb-6 my-6" id="project-section">
@@ -31,6 +41,60 @@ const Project = () => {
         <div id="skills" className="portfolio-highlighter flex gap-6 items-center my-8 justify-center md:justify-start w-full max-w-[1050px]">
           <h2 className="min-w-fit text-2xl md:text-4xl font-manrope font-extrabold flex gap-2 items-center">Projects</h2>
           <div className="portfolio-highlighter w-full md:w-full h-[2px] hidden md:block"></div>
+        </div>
+        <div className="bg-portfolio-fold-bg shadow-md w-full h-fit rounded-[20px] p-4 md:p-8 flex gap-4 flex-col justify-between mb-10">
+          <div className="flex gap-4 flex-col md:flex-row flex-col-reverse justify-between">
+            <div className="md:min-h-[350px] md:w-1/2 text-center md:text-left">
+              <h3 className="text-portfolio-highlighter text-2xl md:text-4xl font-manrope font-extrabold">Airbnb Front Clone</h3>
+              <p className="text-portfolio-text-medium text-xs text-left md:text-sm font-rubik font-normal">
+                <div className="html-parser">
+                  <div>
+                    <div className="">
+                      <span className="leading-relaxed ">
+                        <p>A fully functional Airbnb clone built with Next.js, featuring a modern UI, secure payments, and comprehensive booking capabilities.</p>
+                        <p>Key features include:</p>
+                        <ul>
+                          <li>Developed using Next.js for server-side rendering and optimized performance</li>
+                          <li>Styled with Tailwind CSS to create a responsive and visually appealing interface</li>
+                          <li>Integrated Razorpay for secure and reliable payment processing</li>
+                          <li>Implemented Redux Toolkit for efficient global state management</li>
+                          <li>Utilized React Datepicker and Moment.js for precise date handling and booking logic</li>
+                        </ul>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </p>
+              <div className="flex flex-wrap justify-center md:justify-start gap-2 mt-2">
+                <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">Nextjs</div>
+                <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">Tailwindcss</div>
+                <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">Razorpay</div>
+                {showMoreAirbnb && (
+                  <>
+                    <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">Redux Toolkit</div>
+                    <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">React Datepicker</div>
+                    <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">Swiper</div>
+                    <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">SWR</div>
+                  </>
+                )}
+                <div onClick={toggleShowMoreAirbnb} className="cursor-pointer flex justify-center items-center rounded-[26px] px-4 py-1 text-portfolio-text-dark font-bold text-xs md:text-md">
+                  {showMoreAirbnb ? 'Show Less' : 'Show More'}
+                  <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon={showMoreAirbnb ? 'chevron-up' : 'chevron-down'} className="svg-inline--fa fa-chevron-down ml-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d={showMoreAirbnb ? 'M207.9 271.4L16.6 80.3c-9.3-9.4-24.5-9.4-33.8 0L.7 62.4c-9.4 9.4-9.4 24.6 0 34L207.9 327.6c9.4 9.4 24.6 9.4 34 0L447.3 96.4c9.4-9.4 9.4-24.6 0-34l-17.1-17.9c-9.3-9.4-24.5-9.4-33.8 0L207.9 271.4z' : 'M432.6 209.3L224 392.4 15.4 209.3c-9.5-9.2-24.7-8.9-33.9.7s-8.9 24.7.7 33.9L224 444.8l192.9-201c9.5-9.2 8.9-24.7-.7-33.9-9.6-9.6-24.8-9.9-34.4-.6z'}></path>
+                  </svg>
+                </div>
+              </div>
+              <div className="flex flex-col items-center md:flex-row gap-6 md:gap-4 mt-4">
+                <button onClick={handleClick3} type="button" className="chakra-button transition duration-300 shadow-md border-2 rounded-full self-center font-bold p-4 md:p-8 py-5 md:py-6 min-w-[180px] text-portfolio-highlighter bg-portfolio-background border-portfolio-highlighter border-2 mb-2 md:mb-0">View Project Details </button>
+                <button className="chakra-button transition duration-300 shadow-md border-2 rounded-full self-center font-bold p-4 md:p-8 py-5 md:py-6 min-w-[180px] text-portfolio-highlighter bg-portfolio-background border-portfolio-highlighter border-2 mb-2 md:mb-0"><a href="https://book-nest-azure-three.vercel.app/" target='new'>View Project</a></button>
+              </div>
+            </div>
+            <div className="md:h-[350px] relative md:w-5/12 rounded-[20px]">
+              <div className="image-container undefined">
+                <img alt="pic" src={p1} className="md:h-[350px] h-[200px] object-contain real-image relative duration-700 ease-in-out grayscale-0 blur-0 scale-100" />
+              </div>
+            </div>
+          </div>
         </div>
         <div className="bg-red shadow-md w-full h-fit rounded-[20px] p-4 md:p-8 flex gap-4 flex-col justify-between mb-10">
           <div className="flex gap-4 flex-col md:flex-row flex-col-reverse justify-between">
@@ -89,119 +153,64 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div className="bg-portfolio-fold-bg shadow-md w-full h-fit rounded-[20px] p-4 md:p-8 flex gap-4 flex-col justify-between mb-10">
-          <div className="flex gap-4 flex-col md:flex-row flex-col-reverse justify-between">
-            <div className="md:min-h-[350px] md:w-1/2 text-center md:text-left">
-              <h3 className="text-portfolio-highlighter text-2xl md:text-4xl font-manrope font-extrabold">To-Do App</h3>
-              <p className="text-portfolio-text-dark my-2 text-sm md:text-base font-rubik font-normal">Mar 2024</p>
-              <p className="text-portfolio-text-medium text-xs text-left md:text-sm font-rubik font-normal">
-                <div className="html-parser">
-                  <div>
-                    <div className="">
-                      <span className="leading-relaxed ">
-                        <p>My To-Do App is a productivity tool designed to help users manage their tasks efficiently.</p>
-                        <p>During the course of this project,</p>
-                        <ul>
-                          <li>Built a responsive and intuitive user interface using React.js</li>
-                          <li>Implemented features such as task creation, editing, deletion, and completion tracking</li>
-                          <li>Utilized local storage to persist user data and ensure tasks are saved between sessions</li>
-                          <li>Created custom hooks to manage state and handle side effects effectively</li>
-                        </ul>
-                      </span>
+
+        <div>
+          <div class="bg-portfolio-fold-bg shadow-md w-full h-fit rounded-[20px] p-4 md:p-8 flex gap-4 flex-col justify-between">
+            <div class="flex gap-4 flex-col md:flex-row flex-col-reverse justify-between">
+              <div class="md:min-h-[350px] md:w-1/2 text-center md:text-left">
+                <h3 class="text-portfolio-highlighter text-2xl md:text-4xl font-manrope font-extrabold">Trip Advisor Clone(Frontend)</h3>
+                <h2><a href="https://monikarajasekaran.github.io/Tripadvisor-clone/" target='new'>View Project</a></h2>
+                <p class="text-portfolio-text-dark my-2 text-sm md:text-base font-rubik font-normal">Dec 2023</p>
+                <p class="text-portfolio-text-medium text-xs text-left md:text-sm font-rubik font-normal">
+                  <div class="html-parser">
+                    <div>
+                      <div class="">
+                        <span class="leading-relaxed ">
+                          <p>Welcome to our TripAdvisor frontend clone! Explore top-rated destinations. Plan your perfect trip with our comprehensive travel guide and user-friendly interface.
+                          </p>
+                          <p>During the course of this project,</p>
+                          <ul>
+                            <li>Developed 1 distinct web pages based on Wireframe layouts using HTML and CSS</li>
+                            <li>Implemented Media Queery extensively for ensuring responsive design</li>
+                            <li>&nbsp;Deployed the website to Github/Netlify</li>
+                          </ul>
+                        </span>
+                      </div>
                     </div>
                   </div>
+
+                </p>
+                <div className="flex flex-wrap justify-center md:justify-start gap-2 mt-2">
+                  <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">HTML</div>
+                  <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">CSS</div>
+                  <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">Javascript</div>
+                  <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">Git</div>
+                  <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">Github</div>
                 </div>
-              </p>
-              <div className="flex flex-wrap justify-center md:justify-start gap-2 mt-2">
-                <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">React</div>
-                <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">JavaScript</div>
-                <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">HTML</div>
-                <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">CSS</div>
-                <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">Tailwind</div>
-                {showMore && (
-                  <>
-                    <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">Redux</div>
-                    <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">Node.js</div>
-                    <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">Express.js</div>
-                    {/* Add more items here as needed */}
-                  </>
-                )}
-                <div onClick={toggleShowMore} className="cursor-pointer flex justify-center items-center rounded-[26px] px-4 py-1 text-portfolio-text-dark font-bold text-xs md:text-md">
-                  {showMore ? 'Show Less' : 'Show More'}
-                  <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon={showMore ? 'chevron-up' : 'chevron-down'} className="svg-inline--fa fa-chevron-down ml-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path fill="currentColor" d={showMore ? 'M207.9 271.4L16.6 80.3c-9.3-9.4-24.5-9.4-33.8 0L.7 62.4c-9.4 9.4-9.4 24.6 0 34L207.9 327.6c9.4 9.4 24.6 9.4 34 0L447.3 96.4c9.4-9.4 9.4-24.6 0-34l-17.1-17.9c-9.3-9.4-24.5-9.4-33.8 0L207.9 271.4z' : 'M432.6 209.3L224 392.4 15.4 209.3c-9.5-9.2-24.7-8.9-33.9.7s-8.9 24.7.7 33.9L224 444.8l192.9-201c9.5-9.2 8.9-24.7-.7-33.9-9.6-9.6-24.8-9.9-34.4-.6z'}></path>
-                  </svg>
+
+                <div class="flex flex-col items-center md:flex-row gap-6 md:gap-4 mt-4">
+                  <button onClick={handleClick} type="button" class="chakra-button transition duration-300 shadow-md border-2 rounded-full self-center font-bold p-4 md:p-8 py-5 md:py-6 min-w-[180px] text-portfolio-highlighter bg-portfolio-background border-portfolio-highlighter border-2 mb-2 md:mb-0 css-jxyevw">View Project Details </button>
+                  <button class="chakra-button transition duration-300 shadow-md border-2 rounded-full self-center font-bold p-4 md:p-8 py-5 md:py-6 min-w-[180px] text-portfolio-highlighter bg-portfolio-background border-portfolio-highlighter border-2 mb-2 md:mb-0 css-jxyevw"><a href="https://monikarajasekaran.github.io/Tripadvisor-clone/" target='new'>View Project</a></button>
+
+
                 </div>
+
+
+
+
+
+
+
               </div>
-              <div className="flex flex-col items-center md:flex-row gap-6 md:gap-4 mt-4">
-                <button onClick={handleClick2} type="button" className="chakra-button transition duration-300 shadow-md border-2 rounded-full self-center font-bold p-4 md:p-8 py-5 md:py-6 min-w-[180px] text-portfolio-highlighter bg-portfolio-background border-portfolio-highlighter border-2 mb-2 md:mb-0">View Project Details </button>
-                <button class="chakra-button transition duration-300 shadow-md border-2 rounded-full self-center font-bold p-4 md:p-8 py-5 md:py-6 min-w-[180px] text-portfolio-highlighter bg-portfolio-background border-portfolio-highlighter border-2 mb-2 md:mb-0 css-jxyevw"><a href="https://actodo-three.vercel.app/" target='new'>View Project</a></button>
-              </div>
-            </div>
-            <div className="md:h-[350px] relative md:w-5/12 rounded-[20px]">
-              <div className="image-container undefined">
-                <img alt="pic" src={p2} className="md:h-[350px] h-[200px] object-contain real-image relative duration-700 ease-in-out grayscale-0 blur-0 scale-100" />
+              <div class="md:h-[350px] relative md:w-5/12 rounded-[20px]">
+                <div class="image-container undefined">
+                  <img alt="image" src={p1} class="md:h-[350px] h-[200px] object-contain real-image relative
+            duration-700 ease-in-out grayscale-0 blur-0 scale-100" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div>
-      <div class="bg-portfolio-fold-bg shadow-md w-full h-fit rounded-[20px] p-4 md:p-8 flex gap-4 flex-col justify-between">
-         <div class="flex gap-4 flex-col md:flex-row flex-col-reverse justify-between">
-            <div class="md:min-h-[350px] md:w-1/2 text-center md:text-left">
-               <h3 class="text-portfolio-highlighter text-2xl md:text-4xl font-manrope font-extrabold">Trip Advisor Clone(Frontend)</h3>
-               <h2><a href="https://monikarajasekaran.github.io/Tripadvisor-clone/" target='new'>View Project</a></h2>
-               <p class="text-portfolio-text-dark my-2 text-sm md:text-base font-rubik font-normal">Dec 2023</p>
-               <p class="text-portfolio-text-medium text-xs text-left md:text-sm font-rubik font-normal">
-               <div class="html-parser">
-                        <div>
-                           <div class="">
-                                 <span class="leading-relaxed ">
-                                    <p>Welcome to our TripAdvisor frontend clone! Explore top-rated destinations. Plan your perfect trip with our comprehensive travel guide and user-friendly interface.
-                                    </p>
-                                    <p>During the course of this project,</p>
-                                    <ul>
-                                       <li>Developed 1 distinct web pages based on Wireframe layouts using HTML and CSS</li>
-                                       <li>Implemented Media Queery extensively for ensuring responsive design</li>
-                                       <li>&nbsp;Deployed the website to Github/Netlify</li>
-                                    </ul>
-                                 </span>
-                           </div>
-                        </div>
-                     </div>
-
-               </p>
-               <div className="flex flex-wrap justify-center md:justify-start gap-2 mt-2">
-                <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">HTML</div>
-                <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">CSS</div>
-                <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">Javascript</div>
-                <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">Git</div>
-                <div className="bg-portfolio-background text-portfolio-text-dark w-fit flex justify-center items-center px-2 py-1 md:px-3 md:py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">Github</div>
-              </div>
-              
-               <div class="flex flex-col items-center md:flex-row gap-6 md:gap-4 mt-4">
-               <button onClick={handleClick} type="button" class="chakra-button transition duration-300 shadow-md border-2 rounded-full self-center font-bold p-4 md:p-8 py-5 md:py-6 min-w-[180px] text-portfolio-highlighter bg-portfolio-background border-portfolio-highlighter border-2 mb-2 md:mb-0 css-jxyevw">View Project Details </button>
-               <button class="chakra-button transition duration-300 shadow-md border-2 rounded-full self-center font-bold p-4 md:p-8 py-5 md:py-6 min-w-[180px] text-portfolio-highlighter bg-portfolio-background border-portfolio-highlighter border-2 mb-2 md:mb-0 css-jxyevw"><a href="https://monikarajasekaran.github.io/Tripadvisor-clone/" target='new'>View Project</a></button>
-
-
-                  </div>
-
-
-
-
-
-
-
-            </div>
-            <div class="md:h-[350px] relative md:w-5/12 rounded-[20px]">
-               <div class="image-container undefined">
-               <img alt="image" src={p1} class="md:h-[350px] h-[200px] object-contain real-image relative
-            duration-700 ease-in-out grayscale-0 blur-0 scale-100" />
-                  </div>
-            </div>
-         </div>
-      </div>
-   </div>
       </div>
     </section>
   );
