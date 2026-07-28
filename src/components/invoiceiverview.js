@@ -183,7 +183,7 @@ function Invoiceoverview() {
                 </div>
               </section>
               <div className="py-4 md:py-8"><div class="flex flex-col items-center md:flex-row gap-6 md:gap-4 mt-4">
-                <button type="button" class="bg-secondary shadow-md border-2 rounded-full self-center font-bold p-4 md:p-8 py-5 md:py-6 min-w-[180px]  border-2 mb-2 md:mb-0 css-jxyevw"><a href="https://bulkmail-nnrlvkswy-monikas-projects-6d3e61a3.vercel.app/" target='blank'>View Website</a> </button>
+                <button type="button" class="bg-secondary shadow-md border-2 rounded-full self-center font-bold p-4 md:p-8 py-5 md:py-6 min-w-[180px]  border-2 mb-2 md:mb-0 css-jxyevw"><a href="https://invoice-generation-jet.vercel.app/" target='blank'>View Website</a> </button>
               </div>
               </div>
             </div>
