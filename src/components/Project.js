@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import p1 from '../assets/p1.png'
 import p2 from '../assets/p2.png'
+import invoiceBanner from '../assets/bulkmail.png'
 
 const Project = () => {
   const navigate = useNavigate();
@@ -17,6 +18,14 @@ const Project = () => {
     setShowMoreAirbnb(!showMoreAirbnb);
   };
 
+  const [showMoreInvoice, setShowMoreInvoice] = useState(false);
+
+  const toggleShowMoreInvoice = () => {
+    setShowMoreInvoice(!showMoreInvoice);
+  };
+
+  
+
   const handleClick = () => {
     navigate('/tripadvisor');
   };
@@ -25,8 +34,8 @@ const Project = () => {
     navigate('/bulkmailoverview');
   };
 
-  const handleClick2 = () => {
-    navigate('/todooverview');
+  const handleInvoiceClick = () => {
+    navigate('/invoiceoverview');
   };
 
   const handleClick3 = () => {
@@ -42,6 +51,149 @@ const Project = () => {
           <h2 className="min-w-fit text-2xl md:text-4xl font-manrope font-extrabold flex gap-2 items-center">Projects</h2>
           <div className="portfolio-highlighter w-full md:w-full h-[2px] hidden md:block"></div>
         </div>
+        <div className="bg-portfolio-fold-bg shadow-md w-full h-fit rounded-[20px] p-4 md:p-8 flex gap-4 flex-col justify-between mb-10">
+  <div className="flex gap-4 flex-col md:flex-row flex-col-reverse justify-between">
+    <div className="md:min-h-[350px] md:w-1/2 text-center md:text-left">
+      <h3 className="text-portfolio-highlighter text-2xl md:text-4xl font-manrope font-extrabold">
+        Invoice Management System
+      </h3>
+
+      <p className="text-portfolio-text-medium text-xs text-left md:text-sm font-rubik font-normal">
+        <div className="html-parser">
+          <div>
+            <div>
+              <span className="leading-relaxed">
+                <p>
+                  A modern SaaS-based Invoice Management System built with
+                  Next.js and Firebase to help businesses manage invoices,
+                  quotations, clients, CRM, projects, expenses, and business
+                  communications from a single platform.
+                </p>
+
+                <p>Key features include:</p>
+
+                <ul>
+                  <li>Built with Next.js 15 App Router and TypeScript for high performance.</li>
+                  <li>Implemented Firebase Authentication with role-based access control.</li>
+                  <li>Created Invoice and Quotation modules with PDF generation and download.</li>
+                  <li>Developed Client, Project, CRM, and Expense Management modules.</li>
+                  <li>Integrated Email and WhatsApp services for sharing invoices and quotations.</li>
+                  <li>Used Firebase Firestore and Storage for secure cloud data management.</li>
+                </ul>
+              </span>
+            </div>
+          </div>
+        </div>
+      </p>
+
+      <div className="flex flex-wrap justify-center md:justify-start gap-2 mt-2">
+        <div className="bg-portfolio-background text-portfolio-text-dark w-fit px-3 py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">
+          Next.js 15
+        </div>
+
+        <div className="bg-portfolio-background text-portfolio-text-dark w-fit px-3 py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">
+          TypeScript
+        </div>
+
+        <div className="bg-portfolio-background text-portfolio-text-dark w-fit px-3 py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">
+          Firebase
+        </div>
+
+        {showMoreInvoice && (
+          <>
+            <div className="bg-portfolio-background text-portfolio-text-dark w-fit px-3 py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">
+              Firestore
+            </div>
+
+            <div className="bg-portfolio-background text-portfolio-text-dark w-fit px-3 py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">
+              Tailwind CSS
+            </div>
+
+            <div className="bg-portfolio-background text-portfolio-text-dark w-fit px-3 py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">
+              React Hook Form
+            </div>
+
+            <div className="bg-portfolio-background text-portfolio-text-dark w-fit px-3 py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">
+              Zod
+            </div>
+
+            <div className="bg-portfolio-background text-portfolio-text-dark w-fit px-3 py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">
+              TanStack Query
+            </div>
+
+            <div className="bg-portfolio-background text-portfolio-text-dark w-fit px-3 py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">
+              Brevo API
+            </div>
+
+            <div className="bg-portfolio-background text-portfolio-text-dark w-fit px-3 py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">
+              OpenWA
+            </div>
+
+            <div className="bg-portfolio-background text-portfolio-text-dark w-fit px-3 py-2 rounded-md shadow-sm font-semibold text-xs md:text-md">
+              jsPDF
+            </div>
+          </>
+        )}
+
+        <div
+          onClick={toggleShowMoreInvoice}
+          className="cursor-pointer flex justify-center items-center rounded-[26px] px-4 py-1 text-portfolio-text-dark font-bold text-xs md:text-md"
+        >
+          {showMoreInvoice ? "Show Less" : "Show More"}
+
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            className="svg-inline--fa fa-chevron-down ml-2"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d={
+                showMoreInvoice
+                  ? "M207.9 271.4L16.6 80.3c-9.3-9.4-24.5-9.4-33.8 0L.7 62.4c-9.4 9.4-9.4 24.6 0 34L207.9 327.6c9.4 9.4 24.6 9.4 34 0L447.3 96.4c9.4-9.4 9.4-24.6 0-34l-17.1-17.9c-9.3-9.4-24.5-9.4-33.8 0L207.9 271.4z"
+                  : "M432.6 209.3L224 392.4 15.4 209.3c-9.5-9.2-24.7-8.9-33.9.7s-8.9 24.7.7 33.9L224 444.8l192.9-201c9.5-9.2 8.9-24.7-.7-33.9-9.6-9.6-24.8-9.9-34.4-.6z"
+              }
+            ></path>
+          </svg>
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center md:flex-row gap-6 md:gap-4 mt-4">
+        <button
+          onClick={handleInvoiceClick}
+          type="button"
+          className="chakra-button transition duration-300 shadow-md rounded-full self-center font-bold p-4 md:p-8 py-5 md:py-6 min-w-[180px] text-portfolio-highlighter bg-portfolio-background border-2 border-portfolio-highlighter"
+        >
+          View Project Details
+        </button>
+
+        <button className="chakra-button transition duration-300 shadow-md rounded-full self-center font-bold p-4 md:p-8 py-5 md:py-6 min-w-[180px] text-portfolio-highlighter bg-portfolio-background border-2 border-portfolio-highlighter">
+          <a
+            href="https://your-vercel-url.vercel.app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Project
+          </a>
+        </button>
+      </div>
+    </div>
+
+    <div className="md:h-[350px] relative md:w-5/12 rounded-[20px]">
+      <div className="image-container">
+        <img
+          alt="Invoice App"
+          src={invoiceBanner}
+          className="md:h-[350px] h-[200px] object-contain real-image relative duration-700 ease-in-out"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
         <div className="bg-portfolio-fold-bg shadow-md w-full h-fit rounded-[20px] p-4 md:p-8 flex gap-4 flex-col justify-between mb-10">
           <div className="flex gap-4 flex-col md:flex-row flex-col-reverse justify-between">
             <div className="md:min-h-[350px] md:w-1/2 text-center md:text-left">
