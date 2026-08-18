@@ -114,7 +114,7 @@ function Invoiceoverview() {
 
                       <span>
                         <div className="my-4 flex flex-wrap gap-6">
-                          <div className="md:max-w-[320px] inline-flex flex-col text-center">
+                          {/* <div className="md:max-w-[320px] inline-flex flex-col text-center">
                             <div data-rmiz-wrap="visible">
                               <div className="image-container">
                                 <Zoom>
@@ -127,7 +127,7 @@ function Invoiceoverview() {
                               </div>
                             </div>
                             <p className="mt-2">Dashboard</p>
-                          </div>
+                          </div> */}
 
                           <div className="md:max-w-[320px] inline-flex flex-col text-center">
                             <div data-rmiz-wrap="visible">
