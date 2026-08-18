@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Herosection from './components/Herosection';
 import Websites from './components/websites'
@@ -17,11 +17,9 @@ import AirbnbOverview from './components/airbnboverview';
 import './App.css';
 
 function App() {
-  const basename = '/portfolio';
-
   return (
     <div className="App">
-      <Router basename={basename}>
+      <Router>
         <Routes>
           <Route path="/" element={<React.Fragment><Header /><Herosection /><About /><Project /><Websites /><Experience /></React.Fragment>} />
           <Route path="/invoiceoverview" element={<InvoiceOverview />} />
