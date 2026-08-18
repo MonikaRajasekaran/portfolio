@@ -9,7 +9,7 @@ export default function Header() {
 
     return (
         <header className="flex justify-between p-5 bg-primary text-white sticky top-0 z-50">
-            <a href="#" className="font-bold">PORTFOLIO</a>
+            <HashLink to="/#top" className="font-bold">PORTFOLIO</HashLink>
             <nav className="hidden md:block">
                 <ul className="flex cursor-pointer">
                 <li><HashLink to="/#skills-section">Skills Acquired</HashLink></li>
